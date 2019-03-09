@@ -1,0 +1,39 @@
+publishing {
+    publications {
+        core(MavenPublication) {
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+
+            pom {
+                name = 'Blockchain-native Applications Core'
+                description = ''
+                url = ''
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'mveit'
+                        name = 'Matthias Veit'
+                        email = 'e1126886@student.tuwien.ac.at'
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava' , version: rxJavaVersion
+    compile group: 'org.reflections', name: 'reflections', version: '0.9.11'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.6'
+    compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-parameter-names', version: '2.9.6'
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jdk8', version: '2.9.6'
+}

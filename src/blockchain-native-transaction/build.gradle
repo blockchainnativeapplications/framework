@@ -1,0 +1,33 @@
+publishing {
+    publications {
+        transactions(MavenPublication) {
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+
+            pom {
+                name = 'Blockchain-native Applications Transactions'
+                description = ''
+                url = ''
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'mveit'
+                        name = 'Matthias Veit'
+                        email = 'e1126886@student.tuwien.ac.at'
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava' , version: rxJavaVersion
+}

@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.blockchainnative.quorum.spring.autoconfigure.QuorumAutoConfiguration,org.blockchainnative.quorum.spring.autoconfigure.QuorumFilesystemContractRegistryConfiguration

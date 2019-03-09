@@ -1,0 +1,32 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "greeter",
+        "type": "string"
+      }
+    ],
+    "name": "hello",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "g",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  }
+]

@@ -1,0 +1,38 @@
+publishing {
+    publications {
+        quorum(MavenPublication) {
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+
+            pom {
+                name = 'Blockchain-native Applications Quorum'
+                description = ''
+                url = ''
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'mveit'
+                        name = 'Matthias Veit'
+                        email = 'e1126886@student.tuwien.ac.at'
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+dependencies {
+    compile group: 'org.web3j', name: 'quorum', version: quorumVersion
+    compile project(':blockchain-native-ethereum')
+    compile project(':blockchain-native-transaction')
+    testCompile project(':blockchain-native-core').sourceSets.test.output
+    testCompile project(':blockchain-native-ethereum').sourceSets.test.output
+}

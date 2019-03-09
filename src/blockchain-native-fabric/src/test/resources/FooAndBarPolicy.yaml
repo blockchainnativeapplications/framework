@@ -1,0 +1,14 @@
+identities:
+  foo: {"role": {"name": "peer", "mspId": "FooMSP"}}
+  bar: {"role": {"name": "peer", "mspId": "BarMSP"}}
+  fooadmin: {"role": {"name": "admin", "mspId": "FooMSP"}}
+  baradmin: {"role": {"name": "admin", "mspId": "BarMSP"}}
+
+policy:
+  1-of: # signed by one of these groups can be <n>-of  where <n> is any digit 2-of, 3-of etc..
+  - 1-of:
+    - signed-by: "foo" # a reference to one of the identities defined above.
+    - signed-by: "fooadmin"
+  - 1-of:
+    - signed-by: "bar"
+    - signed-by: "baradmin"

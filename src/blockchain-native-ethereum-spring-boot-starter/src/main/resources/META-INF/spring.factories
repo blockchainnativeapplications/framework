@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.blockchainnative.ethereum.spring.autoconfigure.EthereumAutoConfiguration,org.blockchainnative.ethereum.spring.autoconfigure.EthereumFilesystemContractRegistryConfiguration

@@ -1,0 +1,79 @@
+
+name: "Network-Config-BCN"
+
+#
+# Schema version of the content. Used by the SDK to apply the corresponding parsing rules.
+#
+version: 1.0.0
+
+
+client:
+  # Which organization does this application instance belong to? The value must be the name of an org
+  # defined under "organizations"
+  organization: Foo
+
+  peer:
+    timeout:
+    connection: 10s
+    response: 600s
+
+channels:
+  # name of the channel
+  bcnchannel:
+    orderers:
+    - orderer.bcn.org
+
+    peers:
+      peer0.foo.bcn.org:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+      peer0.bar.bcn.org:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+
+    # [Optional]. what chaincodes are expected to exist on this channel? The application can use
+    # this information to validate that the target peers are in the expected state by comparing
+    # this list with the query results of getInstalledChaincodes() and getInstantiatedChaincodes()
+    chaincodes:
+      #- hello:1.0
+
+organizations:
+  Foo:
+    mspid: FooMSP
+    peers:
+    - peer0.foo.bcn.org
+
+  Bar:
+    mspid: BarMSP
+    peers:
+    - peer0.bar.bcn.org
+
+orderers:
+  orderer.bcn.org:
+    url: grpc://192.168.0.200:7050
+
+    grpcOptions:
+      grpc-max-send-message-length: 15
+      grpc.keepalive_time_ms: 360000
+      grpc.keepalive_timeout_ms: 180000
+
+peers:
+  peer0.foo.bcn.org:
+    url: grpc://192.168.0.200:7051
+    eventUrl: grpc://192.168.0.200:7053
+    grpcOptions:
+      grpc.http2.keepalive_time: 15
+
+  # Can't connect to other orgs event hubs
+  # see https://jira.hyperledger.org/browse/FABJ-175
+
+  peer0.bar.bcn.org:
+    url: grpc://192.168.0.200:9051
+    #eventUrl: grpc://192.168.0.200:9053
+    grpcOptions:
+      grpc.http2.keepalive_time: 15

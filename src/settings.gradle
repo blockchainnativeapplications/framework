@@ -1,0 +1,11 @@
+rootProject.name = 'blockchain-native'
+include ':blockchain-native-core'
+include 'blockchain-native-transaction'
+include ':blockchain-native-fabric'
+include ':blockchain-native-ethereum'
+include 'blockchain-native-ethereum-spring-boot-starter'
+include 'blockchain-native-core-spring-boot-starter'
+include 'blockchain-native-fabric-spring-boot-starter'
+include 'blockchain-native-quorum'
+include 'blockchain-native-quorum-spring-boot-starter'
+

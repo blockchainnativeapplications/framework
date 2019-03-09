@@ -1,0 +1,137 @@
+[
+  "org.blockchainnative.fabric.metadata.FabricContractInfo",
+  {
+    "chaincodeID": {
+      "name": "hello",
+      "version": "1.0",
+      "path": "hello"
+    },
+    "chaincodeLanguage": "Go",
+    "chaincodePolicy": "EiASHggBEgwSCggBEgIIABICCAISDBIKCAESAggBEgIIAxoMEgoKBkZvb01TUBADGgwSCgoGQmFyTVNQEAMaDBIKCgZGb29NU1AQARoMEgoKBkJhck1TUBAB",
+    "chaincodeSourceDirectory": "chaincode/hello",
+    "contractClass": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations",
+    "eventInfos": {
+      "greeted": {
+        "eventFieldInfos": [
+          {
+            "field": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.HelloEvent.name",
+            "sourceFieldIndex": null,
+            "sourceFieldName": "payload",
+            "typeConverterClass": null
+          }
+        ],
+        "eventName": "greeted",
+        "eventParameterInfos": [],
+        "method": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.onGreeted()"
+      }
+    },
+    "identifier": "4fe31e8062d443368023b8d79cb320a2",
+    "methodInfos": {
+      "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.helloReadOnly(java.lang.String)": {
+        "contractMethodName": "hello",
+        "method": "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.helloReadOnly(java.lang.String)",
+        "parameterInfos": [
+          {
+            "parameter": "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.helloReadOnly(java.lang.String)[0]",
+            "parameterIndex": 0,
+            "passParameterAsType": "java.lang.String",
+            "specialArgumentName": null,
+            "typeConverterClass": null
+          }
+        ],
+        "readOnly": true,
+        "resultTypeConverterClass": null,
+        "specialMethod": false
+      },
+      "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.instantiate(java.lang.String,java.util.Set,org.hyperledger.fabric.sdk.User)": {
+        "contractMethodName": "instantiate",
+        "method": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.instantiate(java.lang.String,java.util.Set,org.hyperledger.fabric.sdk.User)",
+        "parameterInfos": [
+          {
+            "parameter": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.instantiate(java.lang.String,java.util.Set,org.hyperledger.fabric.sdk.User)[0]",
+            "parameterIndex": 0,
+            "passParameterAsType": null,
+            "specialArgumentName": null,
+            "typeConverterClass": null
+          },
+          {
+            "parameter": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.instantiate(java.lang.String,java.util.Set,org.hyperledger.fabric.sdk.User)[1]",
+            "parameterIndex": 1,
+            "passParameterAsType": null,
+            "specialArgumentName": "targetPeers",
+            "typeConverterClass": null
+          },
+          {
+            "parameter": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.instantiate(java.lang.String,java.util.Set,org.hyperledger.fabric.sdk.User)[2]",
+            "parameterIndex": 2,
+            "passParameterAsType": null,
+            "specialArgumentName": "user",
+            "typeConverterClass": null
+          }
+        ],
+        "readOnly": false,
+        "resultTypeConverterClass": null,
+        "specialMethod": true
+      },
+      "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.helloAsync(java.lang.String)": {
+        "contractMethodName": "hello",
+        "method": "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.helloAsync(java.lang.String)",
+        "parameterInfos": [
+          {
+            "parameter": "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.helloAsync(java.lang.String)[0]",
+            "parameterIndex": 0,
+            "passParameterAsType": null,
+            "specialArgumentName": null,
+            "typeConverterClass": null
+          }
+        ],
+        "readOnly": false,
+        "resultTypeConverterClass": null,
+        "specialMethod": false
+      },
+      "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.install(java.util.Set,org.hyperledger.fabric.sdk.User)": {
+        "contractMethodName": "install",
+        "method": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.install(java.util.Set,org.hyperledger.fabric.sdk.User)",
+        "parameterInfos": [
+          {
+            "parameter": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.install(java.util.Set,org.hyperledger.fabric.sdk.User)[0]",
+            "parameterIndex": 0,
+            "passParameterAsType": null,
+            "specialArgumentName": "targetPeers",
+            "typeConverterClass": null
+          },
+          {
+            "parameter": "org.blockchainnative.fabric.test.contracts.FabricHelloContractWithoutAnnotations.install(java.util.Set,org.hyperledger.fabric.sdk.User)[1]",
+            "parameterIndex": 1,
+            "passParameterAsType": null,
+            "specialArgumentName": "user",
+            "typeConverterClass": null
+          }
+        ],
+        "readOnly": false,
+        "resultTypeConverterClass": null,
+        "specialMethod": true
+      },
+      "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.hello(java.lang.String)": {
+        "contractMethodName": "hello",
+        "method": "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.hello(java.lang.String)",
+        "parameterInfos": [
+          {
+            "parameter": "org.blockchainnative.test.contracts.HelloContractWithoutAnnotations.hello(java.lang.String)[0]",
+            "parameterIndex": 0,
+            "passParameterAsType": null,
+            "specialArgumentName": null,
+            "typeConverterClass": null
+          }
+        ],
+        "readOnly": false,
+        "resultTypeConverterClass": null,
+        "specialMethod": false
+      }
+    },
+    "targetPeerNames": [
+      "peer0.foo.bcn.org",
+      "peer0.bar.bcn.org"
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+publishing {
+    publications {
+        ethereum(MavenPublication) {
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+
+            pom {
+                name = 'Blockchain-native Applications Ethereum'
+                description = ''
+                url = ''
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'mveit'
+                        name = 'Matthias Veit'
+                        email = 'e1126886@student.tuwien.ac.at'
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile group: 'org.web3j', name: 'core', version: web3jVersion
+    compile project(':blockchain-native-core')
+    compile project(':blockchain-native-transaction')
+    testCompile project(':blockchain-native-core').sourceSets.test.output
+}

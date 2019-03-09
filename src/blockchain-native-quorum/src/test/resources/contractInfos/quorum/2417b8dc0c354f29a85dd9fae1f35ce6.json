@@ -1,0 +1,96 @@
+[
+  "org.blockchainnative.quorum.metadata.QuorumContractInfo",
+  {
+    "abi": "[{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"value\",\"type\":\"int256\"}],\"name\":\"set\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}]",
+    "binary": "608060405234801561001057600080fd5b506000808190555060df806100266000396000f3006080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636d4ce63c14604e578063e5c19b2d146076575b600080fd5b348015605957600080fd5b50606060a0565b6040518082815260200191505060405180910390f35b348015608157600080fd5b50609e6004803603810190808035906020019092919050505060a9565b005b60008054905090565b80600081905550505600a165627a7a72305820918c185c5fce38a14f47056e9fe74eebfa08b0be2c0f38400a1063f86a59dac00029",
+    "contractAddress": "0xdeadbeef",
+    "contractClass": "org.blockchainnative.quorum.test.contracts.SimpleStorageContract",
+    "eventInfos": {},
+    "identifier": "2417b8dc0c354f29a85dd9fae1f35ce6",
+    "methodInfos": {
+      "org.blockchainnative.quorum.test.contracts.SimpleStorageContract.set(int,java.util.List)": {
+        "abi": {
+          "constant": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "int256"
+            }
+          ],
+          "name": "set",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        "contractMethodName": "set",
+        "method": "org.blockchainnative.quorum.test.contracts.SimpleStorageContract.set(int,java.util.List)",
+        "parameterInfos": [
+          {
+            "parameter": "org.blockchainnative.quorum.test.contracts.SimpleStorageContract.set(int,java.util.List)[0]",
+            "parameterIndex": 0,
+            "passParameterAsType": null,
+            "solidityType": "int256",
+            "specialArgumentName": null,
+            "typeConverterClass": null
+          },
+          {
+            "parameter": "org.blockchainnative.quorum.test.contracts.SimpleStorageContract.set(int,java.util.List)[1]",
+            "parameterIndex": 1,
+            "passParameterAsType": null,
+            "solidityType": null,
+            "specialArgumentName": "privateFor",
+            "typeConverterClass": null
+          }
+        ],
+        "readOnly": false,
+        "resultTypeConverterClass": null,
+        "specialMethod": false
+      },
+      "org.blockchainnative.quorum.test.contracts.SimpleStorageContract.get()": {
+        "abi": {
+          "constant": true,
+          "inputs": [],
+          "name": "get",
+          "outputs": [
+            {
+              "indexed": false,
+              "name": "",
+              "type": "int256"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function"
+        },
+        "contractMethodName": "get",
+        "method": "org.blockchainnative.quorum.test.contracts.SimpleStorageContract.get()",
+        "parameterInfos": [],
+        "readOnly": true,
+        "resultTypeConverterClass": null,
+        "specialMethod": false
+      },
+      "org.blockchainnative.quorum.test.contracts.SimpleStorageContract.deploy()": {
+        "abi": {
+          "constant": false,
+          "inputs": [],
+          "name": null,
+          "outputs": null,
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        "contractMethodName": "deploy",
+        "method": "org.blockchainnative.quorum.test.contracts.SimpleStorageContract.deploy()",
+        "parameterInfos": [],
+        "readOnly": false,
+        "resultTypeConverterClass": null,
+        "specialMethod": true
+      }
+    },
+    "privateFor": [
+      "eVYjl9lnwYeiUQvnquvvA/lQEdyMW0kjpeCKDUzPB1E="
+    ]
+  }
+]
